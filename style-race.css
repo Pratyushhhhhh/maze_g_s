@@ -1,0 +1,57 @@
+.context{
+    flex-direction: column;
+  height: 87vh;
+  background: url('/media/race-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #4a1a7c;
+  overflow: hidden;
+  image-rendering: pixelated;
+  text-align: center;
+  background-attachment: scroll;
+  align-items: center;
+}
+
+.title{
+    font-size: 60px;
+    margin: -30px;
+}
+
+.description{
+    margin: -60px;
+}
+
+.description p{
+    padding: 5px;
+}
+
+img{
+  height: 30%;
+  padding: 30px;
+}
+
+.context-sub{
+    background: url(/media/race-bg2.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 87vh;
+}
+
+.context-sub {
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.buttons{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.sub1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 200px;
+}

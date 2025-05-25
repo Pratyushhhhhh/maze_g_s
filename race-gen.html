@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maze Generation Race</title>
+  <link rel="stylesheet" href="stylesRace.css"/>
+</head>
+<body>
+  <h1>Maze Generation Race</h1>
+  
+  <div id="controls">
+    <button id="startRace">Start Race</button>
+  </div>
+
+  <div class="race-container">
+    <div class="racer">
+      <h3>Algorithm 1</h3>
+      <select class="gen-algo">
+        <option value="dfs">Depth-First Search</option>
+        <option value="prim">Prim's Algorithm</option>
+        <option value="eller">Eller's Algorithm</option>
+        <option value="kruskal">Kruskal's Algorithm</option>
+        <option value="recdiv">Recursive Division</option>
+      </select>
+      <div class="canvas-container" id="canvas-container-1"></div>
+    </div>
+    
+    <div class="racer">
+      <h3>Algorithm 2</h3>
+      <select class="gen-algo">
+        <option value="prim">Prim's Algorithm</option>
+        <option value="dfs">Depth-First Search</option>
+        <option value="eller">Eller's Algorithm</option>
+        <option value="kruskal">Kruskal's Algorithm</option>
+        <option value="recdiv">Recursive Division</option>
+      </select>
+      <div class="canvas-container" id="canvas-container-2"></div>
+    </div>
+  </div>
+
+  <div id="raceResult" class="race-result"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script type="module" src="raceGen.js"></script>
+</body>
+</html>

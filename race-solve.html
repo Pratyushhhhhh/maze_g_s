@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maze Solving Race</title>
+  <link rel="stylesheet" href="stylesRace.css"/>
+</head>
+<body>
+  <h1>Maze Solving Race</h1>
+
+  <div id="controls">
+    <div class="solving-maze-control">
+      <label>Maze Generator:</label>
+      <select id="solvingMazeAlgo">
+        <option value="dfs">Depth-First Search</option>
+        <option value="prim">Prim's Algorithm</option>
+         <option value="recdiv">Recursive Division</option>
+        <option value="eller">Eller's Algorithm</option>
+        <option value="kruskal">Kruskal's Algorithm</option>
+      </select>
+      <button id="startRace">Start Race</button>
+    </div>
+  </div>
+
+  <div class="race-container">
+    <div class="racer">
+      <h3>Solver 1</h3>
+      <select class="solver-algo">
+        <option value="bfs">Breadth-First Search</option>
+        <option value="dfs">Depth-First Search</option>
+        <option value="astar">A* Algorithm</option>
+        <option value="greedy">Greedy Best-First Search</option>
+        <option value="dijkstra">Dijkstra's Algorithm</option>
+        <option value="wallfollower">Wall Follower</option>
+        <option value="deadend">Dead-End Filling</option>
+        </select>
+
+      <div class="canvas-container" id="solver-canvas-1" ></div>
+    </div>
+    
+    <div class="racer">
+      <h3>Solver 2</h3>
+      <select class="solver-algo">
+        <option value="bfs">Breadth-First Search</option>
+        <option value="dfs">Depth-First Search</option>
+        <option value="astar">A* Algorithm</option>
+        <option value="greedy">Greedy Best-First Search</option>
+        <option value="dijkstra">Dijkstra's Algorithm</option>
+        <option value="wallfollower">Wall Follower</option>
+        <option value="deadend">Dead-End Filling</option>
+        </select>
+
+      <div class="canvas-container" id="solver-canvas-2"></div>
+    </div>
+  </div>
+
+  <div id="raceResult" class="race-result"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script type="module" src="raceSolve.js"></script>
+</body>
+</html>
